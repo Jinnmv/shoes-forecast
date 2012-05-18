@@ -1,0 +1,9 @@
+
+TODO:
+* Grouping Results by countries
+* Store last 5 choises into browser cookies
+* Change weather api
+* Change location lookup api
+* add google font loader
+
+

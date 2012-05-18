@@ -1,0 +1,237 @@
+﻿html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	display: table;
+	font-family: 'Dosis', Helvetica, Arial, Tahoma;
+	background-color: #F2F2F2;
+	/*background: url("../images/bg-bodyc7xx.gif") repeat scroll 0% 0% transparent;*/
+	background: url("data:image/gif;base64,R0lGODlhMgAyAKIAAPDw8PLy8vHx8e3t7e7u7u/v7+zs7AAAACH5BAAAAAAALAAAAAAyADIAAAP/KCBiEoMMAwwBgeJSBscBozTQMDwBEBXLInkDcAlEQdBpIQ4p3xAQCuGWCtyGqpTK5gEajECADMCMNQwd2oliYdhSDUHswzFMIjyizlIxBzqFjHRnEhuedjYBe9pLIQ0sQw8FZnF7b2VALxEPFhMChR0QEnM7LQ8KfTI2kW8mexwxFRyEcgEhExkeTx13Ex0ShTcqLah3hQ5aMzY2Fx9+PCp7N10UbwyrcFAqFm5GYskengwaRpyFYRQMe2JvT30hQKgytBYsbxd3hGKs6bSIFxguJxG4NNsZviZrN31ukhLFauFvFRVZCnSBwsKnAhQ9MgKZEUMvhJQlbjwsgIEF/8IGjQ7BZImTooahGyIcOQiRh8owIDqO9IkzicVBHHJ+HInj7IkZhhgkGKkj6ckGbwpsInI1Rka9SCYdCLt1B1kkCgsTNjXBdQKfO7K8hnKFJaiOocpqRHBIoVAik3sc4PIXsy2SGtUwKBhqiAMSITV0cJqgQpgFVN/gmCHGQ5CCCl5LSZpVAxXjCTUCF4rx5k1EoajwkcDQkSEsSZV+naNiJ5AEPC1ZRIBJQwsNmo2ldBq3zcLODINYdLC0IESGssY1YtGRyQwrWAyKOxtXV4gRll6SaCLMiVSEHhQlROrkoI2JChExy8pw9cmNs48x8tAoxlUcznCkaPAQi8iCdv92gOAbaWd9cVhtZrRg1B4nTOYbSZedo1mCnY3kkwdDFTREVRjEIERtGIbmRAVx1eYQLLC0Ep0WjZQw3zWDmFCVEehc0NkVMo6wWGW6IMIDQ+IcA8VsHI1HoiZgtUFiEqkd9MgDJxSnCQ2cvPeJPaLoV0pnQtqhTCspnpOGA4MMwoYOBkKhxC8vLIBLH1uc+F40K8TgRHR4udnLJA4IFhgx0YBQ2wXdYEFCF5p0U0EeDWyyzqJDiUGLXkm10ktPV3QyTVwxsRIJNTZ9IktgLjYhW4M/LrAbmoGUQ4ghRlg6y1Cg7KJqZr8IglUPgE7EwHeozFeGD/xctNstbpbJU3D/TrFGAg+xzhDaOmU4oxcVccjg0UZHAfHjWVIIQ4wrLhk6y0rDRdJCUGApQesXunWxSjoM9blTB//MgG4lVBR7UDfEeJuaE1516CIgrCwXmVkPCHXSQD5RYSlc68xFUTptsMNPK4M4tSW0IQhixR3S1ZlpC2vkNoMMixWCHlfFFKvBEBCSs+N3SdkglyqQXuUnlQ2LR1pg57Ri1xkc+IIezX6Sa0IKh6EiCQ1DBBvsnA1iZY9WLnUl41ePkAWaqfOVVcO/QZh0XRHfCOQMCcnd4uE8PLlMl2BThSvKIGAASNgtSOhDiBNAIGjnrKtsEoJ7PrKUgdQ6jJJLfQl+YE3dJmfjICO2HgoXBIRnYPmgVKB8RKda2urCiY57/vgpNoBGKaKWBSQAADs%3D") repeat scroll 0% 0% transparent;
+	font-size: 100%;
+}
+
+body {
+	padding: 5px;
+	margin: auto;
+	display: table-cell;
+	vertical-align: middle;
+/*	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;*/
+}
+
+header {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+header > h1 {
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #444444;
+	cursor: pointer;
+	display: none;
+}
+
+header > input {
+	font-size: 1.5em;
+	font-family: 'Dosis';
+	color: #444444;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid transparent;
+	background-color: transparent;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	outline: none;
+	/* useful if you don't want a bg color from leaking outside the border: */
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+header > input:focus {
+	border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187);
+	background-color: #F7F7F7;
+	box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.1) inset,
+				-1px 0px 3px rgba(0, 0, 0, 0.1) inset;
+	cursor: text;
+}
+
+#wrapper {
+    width: 13em;
+	margin: 0 auto;
+    position: relative;
+}
+
+#term-wrapper {
+	float: left;
+}
+
+#termometr {
+	background-color:	#F7F7F7;
+    box-shadow:			1px 0px 3px rgba(0, 0, 0, 0.1) inset,
+					   -1px 0px 3px rgba(0, 0, 0, 0.1) inset;
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+    height:				450px;
+    display:			table-cell;
+    vertical-align:		bottom;
+    border-radius:		6px 6px 0 0;
+    border-width:		1px;
+    border-style:		solid;
+    border-color:		rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+
+	/* useful if you don't want a bg color from leaking outside the border: */
+}
+
+#bar {
+    background-color: #49AFCD;
+    background-image: -webkit-linear-gradient(left, #1CB0EF, #1790C4);
+    background-image: -moz-linear-gradient(left, #1CB0EF, #1790C4);
+    background-image: -ms-linear-gradient(left, #1CB0EF, #1790C4);
+    background-image: -o-linear-gradient(left, #1CB0EF, #1790C4);
+    background-image: linear-gradient(left, #1CB0EF, #1790C4);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+    border-radius: 6px 6px 0 0;
+    width: 14px;
+    height: 38px;
+	position: relative;
+    vertical-align: bottom;
+	/*-webkit-transition: height 1s;
+	-moz-transition: height 1s;
+	-o-transition: height 1s;
+	transition: height 1s;*/
+	/* useful if you don't want a bg color from leaking outside the border: 
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;*/
+}
+
+#buble {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    background-color: #49AFCD;
+    background-image: -webkit-linear-gradient(left, #1CB0EF, #1790C4);
+    background-image: -moz-linear-gradient(left, #1CB0EF, #1790C4);
+    background-image: -ms-linear-gradient(left, #1CB0EF, #1790C4);
+    background-image: -o-linear-gradient(left, #1CB0EF, #1790C4);
+    background-image: linear-gradient(left, #1CB0EF, #1790C4);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.0)
+				rgba(0, 0, 0, 0.1)
+				rgba(0, 0, 0, 0.1)
+				rgba(0, 0, 0, 0.1);
+	position: relative;
+    margin-left: -4px;
+    margin-top: -6px;
+}
+
+#shoes-list {
+    float: left;
+    margin: .5em 0 0 1em;
+}
+
+#shoes-list > dt, dd {
+    margin-bottom: 0.3em;
+    display: block;
+    float: left;
+	-moz-transition: opacity .2s;
+	-webkit-transition: opacity .2s;
+	-o-transition: opacity .2s;
+	transition:opacity .2s;
+}
+
+#shoes-list > dt {
+	clear: both;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187);
+	background-color: #F7F7F7;
+	box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.1) inset,
+				-1px 0px 3px rgba(0, 0, 0, 0.1) inset;
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+	/* useful if you don't want a bg color from leaking outside the border: */
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+	opacity: .1;
+}
+
+#shoes-list > dt:hover {
+	opacity: 1;
+}
+
+#shoes-list > dt:hover + dd {
+	visibility: visible;
+	opacity: 1;
+}
+
+#shoes-list > dt > img {
+	margin: 3px;
+}
+
+#shoes-list > dd {
+	visibility: hidden;
+	opacity: 0;
+	margin: 0 0 0 .5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187);
+	border-radius: 5px;
+	/* useful if you don't want a bg color from leaking outside the border: */
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+	background-color: #F5F5F5;
+	background-image: -webkit-linear-gradient(top , rgb(255, 255, 255), rgb(230, 230, 230));
+	background-image: -moz-linear-gradient(top , rgb(255, 255, 255), rgb(230, 230, 230));
+	background-image: -ms-linear-gradient(top , rgb(255, 255, 255), rgb(230, 230, 230));
+	background-image: -o-linear-gradient(top , rgb(255, 255, 255), rgb(230, 230, 230));
+	background-image: linear-gradient(top , rgb(255, 255, 255), rgb(230, 230, 230));
+	box-shadow: 0pt 1px 0pt rgba(255, 255, 255, 0.2) inset,
+				0pt 1px 2px rgba(0, 0, 0, 0.05);
+	padding: 0.1em .5em 0.08em .5em;
+	vertical-allign: middle;
+	line-height: 1.8em;
+	color: #333333;
+	text-shadow: 0pt 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+#shoes-list > dt.optimal-shoes {
+    opacity: 1;
+}
+
+#shoes-list > dt.optimal-shoes + dd {
+    visibility: visible;
+	opacity: 1;
+}
+
+/*#empty-bar {
+    background-color: #F7F7F7;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.1) inset,
+               -1px 0px 3px rgba(0, 0, 0, 0.1) inset;
+    width: 15px;
+    height: 450px;
+    vertical-align: bottom;
+    display: table-cell;
+    border-radius: 7px 7px 0 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+}*/
+
+
+
+#temp {
+    float: left;
+    clear: both;
+    margin: -1.2em 0 0 2em;
+    font-size: 1.4em;
+}
+
+

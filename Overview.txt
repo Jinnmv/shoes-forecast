@@ -1,0 +1,7 @@
+Technogies:
+YQL API, weather.forecast and geo.places
+JavaScript
+JQuery
+JQuery UI (AutoComplete) - cities lookup
+JQuery Cookies plugin - store cookies
+Tinycon - favicon
